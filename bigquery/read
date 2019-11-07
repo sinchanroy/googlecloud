@@ -1,0 +1,21 @@
+
+
+view_job_information.py - Display Job Information
+
+query.py - Query a table in GCP
+
+load_avro.py - Load AVRO file in GCP
+
+list_jobs_in_a_project.py - List all the jobs in a project
+
+define_table_schema.py - Define table schema in BigQuery
+
+cancelling_a_job.py - Cancelling a running Job in BigQuery with Python
+
+insert.py - Insert data in BigQuery Table using Python
+
+data_insert.py - Insert data in BigQuery Table using Python as a Dataflow Job
+
+load_avro.py - To load Avro data from Cloud Storage into a new BigQuery table
+
+

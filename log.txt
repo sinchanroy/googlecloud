@@ -1,0 +1,1818 @@
+INFO:root:Requesting discovery document from https://www.googleapis.com/discovery/v1/apis/bigquery/v2/rest
+INFO:googleapiclient.model:--request-start--
+INFO:googleapiclient.model:-headers-start-
+INFO:googleapiclient.model:x-goog-api-client: gdcl/1.7.11 gl-python/2.7.16
+INFO:googleapiclient.model:content-type: application/json
+INFO:googleapiclient.model:accept-encoding: gzip, deflate
+INFO:googleapiclient.model:accept: application/json
+INFO:googleapiclient.model:user-agent: (gzip)
+INFO:googleapiclient.model:-headers-end-
+INFO:googleapiclient.model:-path-parameters-start-
+INFO:googleapiclient.model:projectId: go-de-internal-siroy
+INFO:googleapiclient.model:-path-parameters-end-
+INFO:googleapiclient.model:body: {"configuration": {"query": {"query": "select * from `bigquery-public-data.samples.shakespeare`", "useLegacySql": false}}, "jobReference": {"projectId": "go-de-internal-siroy", "jobId": "bqjob_r4820b04496a7b0db_0000016e45053438_1"}}
+INFO:googleapiclient.model:query: ?alt=json
+INFO:googleapiclient.model:--request-end--
+INFO:googleapiclient.discovery:URL being requested: POST https://bigquery.googleapis.com/bigquery/v2/projects/go-de-internal-siroy/jobs?alt=json
+INFO:googleapiclient.model:--response-start--
+INFO:googleapiclient.model:status: 200
+INFO:googleapiclient.model:content-length: 1180
+INFO:googleapiclient.model:x-xss-protection: 0
+INFO:googleapiclient.model:x-content-type-options: nosniff
+INFO:googleapiclient.model:transfer-encoding: chunked
+INFO:googleapiclient.model:vary: Origin, X-Origin, Referer
+INFO:googleapiclient.model:server: ESF
+INFO:googleapiclient.model:etag: eAei02oTMzVSAP/LS3HNAA==
+INFO:googleapiclient.model:cache-control: private
+INFO:googleapiclient.model:date: Thu, 07 Nov 2019 08:40:00 GMT
+INFO:googleapiclient.model:x-frame-options: SAMEORIGIN
+INFO:googleapiclient.model:alt-svc: quic=":443"; ma=2592000; v="46,43",h3-Q050=":443"; ma=2592000,h3-Q049=":443"; ma=2592000,h3-Q048=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000
+INFO:googleapiclient.model:content-type: application/json; charset=UTF-8
+INFO:googleapiclient.model:-content-encoding: gzip
+INFO:googleapiclient.model:{
+  "kind": "bigquery#job",
+  "etag": "eAei02oTMzVSAP/LS3HNAA==",
+  "id": "go-de-internal-siroy:US.bqjob_r4820b04496a7b0db_0000016e45053438_1",
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/go-de-internal-siroy/jobs/bqjob_r4820b04496a7b0db_0000016e45053438_1?location=US",
+  "user_email": "si.roy@goreply.de",
+  "configuration": {
+    "query": {
+      "query": "select * from `bigquery-public-data.samples.shakespeare`",
+      "destinationTable": {
+        "projectId": "go-de-internal-siroy",
+        "datasetId": "_60249a6fd25cc712878ed80c3d6c94dbb7845433",
+        "tableId": "anon919b5bf1695efed97bc1b3237c754b9ad9f542aa"
+      },
+      "createDisposition": "CREATE_IF_NEEDED",
+      "writeDisposition": "WRITE_TRUNCATE",
+      "priority": "INTERACTIVE",
+      "useLegacySql": false
+    },
+    "jobType": "QUERY"
+  },
+  "jobReference": {
+    "projectId": "go-de-internal-siroy",
+    "jobId": "bqjob_r4820b04496a7b0db_0000016e45053438_1",
+    "location": "US"
+  },
+  "statistics": {
+    "creationTime": "1573115999730",
+    "startTime": "1573116000024",
+    "query": {
+      "statementType": "SELECT"
+    }
+  },
+  "status": {
+    "state": "RUNNING"
+  }
+}
+
+INFO:googleapiclient.model:--response-end--
+INFO:googleapiclient.model:--request-start--
+INFO:googleapiclient.model:-headers-start-
+INFO:googleapiclient.model:x-goog-api-client: gdcl/1.7.11 gl-python/2.7.16
+INFO:googleapiclient.model:accept-encoding: gzip, deflate
+INFO:googleapiclient.model:accept: application/json
+INFO:googleapiclient.model:user-agent: (gzip)
+INFO:googleapiclient.model:-headers-end-
+INFO:googleapiclient.model:-path-parameters-start-
+INFO:googleapiclient.model:projectId: go-de-internal-siroy
+INFO:googleapiclient.model:jobId: bqjob_r4820b04496a7b0db_0000016e45053438_1
+INFO:googleapiclient.model:-path-parameters-end-
+INFO:googleapiclient.model:body: None
+INFO:googleapiclient.model:query: ?alt=json&location=US
+INFO:googleapiclient.model:--request-end--
+INFO:googleapiclient.discovery:URL being requested: GET https://bigquery.googleapis.com/bigquery/v2/projects/go-de-internal-siroy/jobs/bqjob_r4820b04496a7b0db_0000016e45053438_1?alt=json&location=US
+INFO:googleapiclient.model:--response-start--
+INFO:googleapiclient.model:status: 200
+INFO:googleapiclient.model:content-length: 1330
+INFO:googleapiclient.model:x-xss-protection: 0
+INFO:googleapiclient.model:content-location: https://bigquery.googleapis.com/bigquery/v2/projects/go-de-internal-siroy/jobs/bqjob_r4820b04496a7b0db_0000016e45053438_1?alt=json&location=US
+INFO:googleapiclient.model:x-content-type-options: nosniff
+INFO:googleapiclient.model:transfer-encoding: chunked
+INFO:googleapiclient.model:vary: Origin, X-Origin, Referer
+INFO:googleapiclient.model:server: ESF
+INFO:googleapiclient.model:etag: /HabhBW7GywNyUXnEwILKQ==
+INFO:googleapiclient.model:cache-control: private
+INFO:googleapiclient.model:date: Thu, 07 Nov 2019 08:40:00 GMT
+INFO:googleapiclient.model:x-frame-options: SAMEORIGIN
+INFO:googleapiclient.model:alt-svc: quic=":443"; ma=2592000; v="46,43",h3-Q050=":443"; ma=2592000,h3-Q049=":443"; ma=2592000,h3-Q048=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000
+INFO:googleapiclient.model:content-type: application/json; charset=UTF-8
+INFO:googleapiclient.model:-content-encoding: gzip
+INFO:googleapiclient.model:{
+  "kind": "bigquery#job",
+  "etag": "/HabhBW7GywNyUXnEwILKQ==",
+  "id": "go-de-internal-siroy:US.bqjob_r4820b04496a7b0db_0000016e45053438_1",
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/go-de-internal-siroy/jobs/bqjob_r4820b04496a7b0db_0000016e45053438_1?location=US",
+  "user_email": "si.roy@goreply.de",
+  "configuration": {
+    "query": {
+      "query": "select * from `bigquery-public-data.samples.shakespeare`",
+      "destinationTable": {
+        "projectId": "go-de-internal-siroy",
+        "datasetId": "_60249a6fd25cc712878ed80c3d6c94dbb7845433",
+        "tableId": "anon919b5bf1695efed97bc1b3237c754b9ad9f542aa"
+      },
+      "createDisposition": "CREATE_IF_NEEDED",
+      "writeDisposition": "WRITE_TRUNCATE",
+      "priority": "INTERACTIVE",
+      "useLegacySql": false
+    },
+    "jobType": "QUERY"
+  },
+  "jobReference": {
+    "projectId": "go-de-internal-siroy",
+    "jobId": "bqjob_r4820b04496a7b0db_0000016e45053438_1",
+    "location": "US"
+  },
+  "statistics": {
+    "creationTime": "1573115999730",
+    "startTime": "1573116000024",
+    "endTime": "1573116000044",
+    "totalBytesProcessed": "0",
+    "query": {
+      "totalBytesProcessed": "0",
+      "totalBytesBilled": "0",
+      "cacheHit": true,
+      "statementType": "SELECT"
+    }
+  },
+  "status": {
+    "state": "DONE"
+  }
+}
+
+INFO:googleapiclient.model:--response-end--
+INFO:googleapiclient.model:--request-start--
+INFO:googleapiclient.model:-headers-start-
+INFO:googleapiclient.model:x-goog-api-client: gdcl/1.7.11 gl-python/2.7.16
+INFO:googleapiclient.model:accept-encoding: gzip, deflate
+INFO:googleapiclient.model:accept: application/json
+INFO:googleapiclient.model:user-agent: (gzip)
+INFO:googleapiclient.model:-headers-end-
+INFO:googleapiclient.model:-path-parameters-start-
+INFO:googleapiclient.model:projectId: go-de-internal-siroy
+INFO:googleapiclient.model:jobId: bqjob_r4820b04496a7b0db_0000016e45053438_1
+INFO:googleapiclient.model:-path-parameters-end-
+INFO:googleapiclient.model:body: None
+INFO:googleapiclient.model:query: ?timeoutMs=0&startIndex=0&location=US&maxResults=100&alt=json
+INFO:googleapiclient.model:--request-end--
+INFO:googleapiclient.discovery:URL being requested: GET https://bigquery.googleapis.com/bigquery/v2/projects/go-de-internal-siroy/queries/bqjob_r4820b04496a7b0db_0000016e45053438_1?timeoutMs=0&startIndex=0&location=US&maxResults=100&alt=json
+INFO:googleapiclient.model:--response-start--
+INFO:googleapiclient.model:status: 200
+INFO:googleapiclient.model:content-length: 21270
+INFO:googleapiclient.model:x-xss-protection: 0
+INFO:googleapiclient.model:content-location: https://bigquery.googleapis.com/bigquery/v2/projects/go-de-internal-siroy/queries/bqjob_r4820b04496a7b0db_0000016e45053438_1?timeoutMs=0&startIndex=0&location=US&maxResults=100&alt=json
+INFO:googleapiclient.model:x-content-type-options: nosniff
+INFO:googleapiclient.model:transfer-encoding: chunked
+INFO:googleapiclient.model:vary: Origin, X-Origin, Referer
+INFO:googleapiclient.model:server: ESF
+INFO:googleapiclient.model:etag: s9Nng92tqdF45JlEPucCoA==
+INFO:googleapiclient.model:cache-control: private
+INFO:googleapiclient.model:date: Thu, 07 Nov 2019 08:40:00 GMT
+INFO:googleapiclient.model:x-frame-options: SAMEORIGIN
+INFO:googleapiclient.model:alt-svc: quic=":443"; ma=2592000; v="46,43",h3-Q050=":443"; ma=2592000,h3-Q049=":443"; ma=2592000,h3-Q048=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000
+INFO:googleapiclient.model:content-type: application/json; charset=UTF-8
+INFO:googleapiclient.model:-content-encoding: gzip
+INFO:googleapiclient.model:{
+  "kind": "bigquery#getQueryResultsResponse",
+  "etag": "s9Nng92tqdF45JlEPucCoA==",
+  "schema": {
+    "fields": [
+      {
+        "name": "word",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "word_count",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "corpus",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "corpus_date",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+      }
+    ]
+  },
+  "jobReference": {
+    "projectId": "go-de-internal-siroy",
+    "jobId": "bqjob_r4820b04496a7b0db_0000016e45053438_1",
+    "location": "US"
+  },
+  "totalRows": "164656",
+  "pageToken": "BEWDOBKFNYAQAAASA4EAAEEAQCAAKGQEBBSBAZBAWCXBK===",
+  "rows": [
+    {
+      "f": [
+        {
+          "v": "LVII"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "augurs"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "dimm'd"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "plagues"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "treason"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "surmise"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "heed"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "Unthrifty"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "quality"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "wherever"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "C"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "L"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "imaginary"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "H"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "relief"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "W"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "V"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "advised"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "grey"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "X"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "glazed"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "happies"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "rebuked"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "gardens"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "misplaced"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "mistaking"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "enjoyer"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "disarm'd"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "dyer's"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "Proud"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "lips'"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "extremity"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "unions"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "drop"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "afar"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "HAPPINESS"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "interchange"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "composition"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "guilt"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "for't"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "unrest"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "tops"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "complexion'd"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "votary"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "wish'd"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "watchman"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "burn'd"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "brightness"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "reign'd"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "fuel"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "alike"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "spends"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "travail"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "youngly"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "Join"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "CXLIII"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "torn"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "EVER"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "female"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "brows"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "pitying"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "adding"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "Whether"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "sympathized"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "bones"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "purge"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "possesseth"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "o'ertake"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "robe"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "hems"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "suppose"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "esteeming"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "impeach'd"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "steals"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "rents"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "Wilt"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "Bear"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "day's"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "maturity"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "assistance"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "space"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "epitaph"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "testy"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "endless"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "rather"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "Disdains"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "Never"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "wailing"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "whereupon"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "clears"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "moiety"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "oaths'"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "alien"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "warning"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "Weeds"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "duteous"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "April's"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "season'd"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "exceeds"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    },
+    {
+      "f": [
+        {
+          "v": "miss'd"
+        },
+        {
+          "v": "1"
+        },
+        {
+          "v": "sonnets"
+        },
+        {
+          "v": "0"
+        }
+      ]
+    }
+  ],
+  "totalBytesProcessed": "0",
+  "jobComplete": true,
+  "cacheHit": true
+}
+
+INFO:googleapiclient.model:--response-end--
