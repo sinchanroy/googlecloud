@@ -4,7 +4,7 @@ view_job_information.py - Display Job Information
 
 query.py - Query a table in GCP
 
-load_avro.py - Load AVRO file in GCP
+load_avro.py - Load AVRO file in GCP from Cloud Storage
 
 list_jobs_in_a_project.py - List all the jobs in a project
 
